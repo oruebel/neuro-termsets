@@ -33,11 +33,6 @@ subject = Subject(
 
 nwbfile.subject = subject
 
-herd.add_ref_termset(container=subject,
-                     attribute='species',
-                     termset=subject.species.termset,
-                     key=subject.species.value)
-
 # Create a Device
 device = Device(name="Device1")
 nwbfile.add_device(device)
@@ -53,10 +48,15 @@ electrode_group = ElectrodeGroup(
 
 nwbfile.add_electrode_group(electrode_group)
 
-herd.add_ref_termset(container=electrode_group,
-                     attribute='location',
-                     termset=electrode_group.location.termset,
-                     key=electrode_group.location.value)
+# Populate the HERD table with references to the NWBFile and its termset-wrapped attributes
+herd = nwbfile.get_external_resources()  # Create the HERD table if it doesn't exist
+herd.add_ref_container(nwbfile)  # Automatically find all TermSetWrappers in the NWBFile and populate HERD
+
+# If we only wanted to add specific termset references, for a particular field we could do so like this:
+# herd.add_ref_termset(container=subject,
+#                      attribute='species',
+#                      termset=subject.species.termset,
+#                      key=subject.species.value)
 
 # Write the file
 filename = "example_termsets.nwb"
