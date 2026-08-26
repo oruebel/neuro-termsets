@@ -1,0 +1,104 @@
+id: https://github.com/nwb-extensions/nwb_termsets/term_sets/strains
+name: Strains
+version: 0.0.1
+prefixes:
+  RRID: "https://scicrunch.org/resolver/RRID:"
+imports:
+- linkml:types
+default_range: string
+enums:
+  Strain:
+    permissible_values:
+      # Mice (Mus musculus)
+      C57BL/6J:
+        description: C57BL/6J (Mus musculus, The Jackson Laboratory)
+        meaning: RRID:IMSR_JAX:000664
+      C57BL/6N:
+        description: C57BL/6N (Mus musculus, Charles River)
+        meaning: RRID:IMSR_CRL:027
+      BALB/cJ:
+        description: BALB/cJ (Mus musculus, The Jackson Laboratory)
+        meaning: RRID:IMSR_JAX:000651
+      129S1/SvImJ:
+        description: 129S1/SvImJ (Mus musculus, The Jackson Laboratory)
+        meaning: RRID:IMSR_JAX:002448
+      A/J:
+        description: A/J (Mus musculus, The Jackson Laboratory)
+        meaning: RRID:IMSR_JAX:000646
+      DBA/2J:
+        description: DBA/2J (Mus musculus, The Jackson Laboratory)
+        meaning: RRID:IMSR_JAX:000671
+      FVB/NJ:
+        description: FVB/NJ (Mus musculus, The Jackson Laboratory)
+        meaning: RRID:IMSR_JAX:001800
+      CBA/J:
+        description: CBA/J (Mus musculus, The Jackson Laboratory)
+        meaning: RRID:IMSR_JAX:000656
+      CD-1:
+        description: CD-1 / ICR (Mus musculus, Charles River)
+        meaning: RRID:IMSR_CRL:022
+      Swiss Webster:
+        description: Swiss Webster (Mus musculus, Charles River)
+        meaning: RRID:IMSR_CRL:024
+      NOD/ShiLtJ:
+        description: NOD/ShiLtJ (Mus musculus, The Jackson Laboratory)
+        meaning: RRID:IMSR_JAX:001976
+      NSG:
+        description: NOD scid gamma / NSG (Mus musculus, The Jackson Laboratory)
+        meaning: RRID:IMSR_JAX:005557
+      
+      # Rats (Rattus norvegicus)
+      Long-Evans:
+        description: Long-Evans (Rattus norvegicus, Charles River)
+        meaning: RRID:RGD_2308852
+      Sprague Dawley:
+        description: Sprague Dawley (Rattus norvegicus, Charles River)
+        meaning: RRID:RGD_734476
+      Wistar:
+        description: Wistar (Rattus norvegicus, Rat Genome Database)
+        meaning: RRID:RGD_13508588
+      
+      # Nematode (Caenorhabditis elegans)
+      N2:
+        description: N2 Bristol (Caenorhabditis elegans, wild type)
+        meaning: RRID:WB-STRAIN:N2
+      
+      # Transgenic/Reporter Lines (Mice)
+      PV-Cre:
+        description: B6;129P2-Pvalb<tm1(cre)Arbr>/J (PV-Cre, The Jackson Laboratory)
+        meaning: RRID:IMSR_JAX:008069
+      SOM-IRES-Cre:
+        description: Sst<tm2.1(cre)Zjh>/J (SOM-IRES-Cre, The Jackson Laboratory)
+        meaning: RRID:IMSR_JAX:013044
+      DAT-IRES-Cre:
+        description: B6.SJL-Slc6a3<tm1.1(cre)Bkmn>/J (DAT-IRES-Cre, The Jackson Laboratory)
+        meaning: RRID:IMSR_JAX:006660
+      Vglut2-ires-Cre:
+        description: Slc17a6<tm2(cre)Lowl>/J (Vglut2-ires-Cre, The Jackson Laboratory)
+        meaning: RRID:IMSR_JAX:016963
+      Ai14:
+        description: B6.Cg-Gt(ROSA)26Sor<tm14(CAG-tdTomato)Hze>/J (Ai14 Reporter, The Jackson Laboratory)
+        meaning: RRID:IMSR_JAX:007914
+
+      Fischer 344:
+        description: Fischer 344 / F344 (Rattus norvegicus, Charles River)
+        meaning: RRID:RGD_734473
+      Lewis:
+        description: Lewis (Rattus norvegicus, Charles River)
+        meaning: RRID:RGD_737920
+        
+      # Zebrafish (Danio rerio)
+      AB:
+        description: AB strain (Danio rerio, ZIRC)
+        meaning: RRID:ZIRC_ZL1
+      Tubingen:
+        description: Tubingen strain (Danio rerio, ZIRC)
+        meaning: RRID:ZIRC_ZL57
+      
+      # Fruit fly (Drosophila melanogaster)
+      Canton-S:
+        description: Canton-S (Drosophila melanogaster, Bloomington Drosophila Stock Center)
+        meaning: RRID:BDSC_64349
+      Oregon-R:
+        description: Oregon-R (Drosophila melanogaster, Bloomington Drosophila Stock Center)
+        meaning: RRID:BDSC_5
