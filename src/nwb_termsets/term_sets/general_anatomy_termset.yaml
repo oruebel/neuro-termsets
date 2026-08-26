@@ -1,0 +1,158 @@
+id: https://github.com/nwb-extensions/nwb_termsets/term_sets/general_anatomy
+name: GeneralAnatomy
+version: 0.0.1
+prefixes:
+  UBERON: http://purl.obolibrary.org/obo/UBERON_
+imports:
+- linkml:types
+default_range: string
+enums:
+  AnatomicalStructure:
+    permissible_values:
+      Head:
+        description: head
+        meaning: UBERON:0000033
+      Brain:
+        description: brain
+        meaning: UBERON:0000955
+      Spinal cord:
+        description: spinal cord
+        meaning: UBERON:0002240
+      Vagus nerve:
+        description: vagus nerve
+        meaning: UBERON:0001759
+      Sciatic nerve:
+        description: sciatic nerve
+        meaning: UBERON:0001323
+      Trigeminal nerve:
+        description: trigeminal nerve
+        meaning: UBERON:0001646
+      Snout:
+        description: snout
+        meaning: UBERON:0006333
+      Ear:
+        description: external ear
+        meaning: UBERON:0001691
+      Eye:
+        description: eye
+        meaning: UBERON:0000970
+      Neck:
+        description: neck
+        meaning: UBERON:0000974
+      Trunk:
+        description: trunk
+        meaning: UBERON:0002100
+      Spine:
+        description: vertebral column
+        meaning: UBERON:0001130
+      Tail:
+        description: tail
+        meaning: UBERON:0002415
+      Shoulder:
+        description: shoulder
+        meaning: UBERON:0001467
+      Upper arm:
+        description: forelimb stylopod (arm)
+        meaning: UBERON:0003822
+      Elbow:
+        description: elbow
+        meaning: UBERON:0001461
+      Forearm:
+        description: forelimb zeugopod (forearm)
+        meaning: UBERON:0002386
+      Wrist:
+        description: carpus (wrist)
+        meaning: UBERON:0004452
+      Hand:
+        description: manus (forepaw)
+        meaning: UBERON:0002398
+      Hip:
+        description: hip
+        meaning: UBERON:0001464
+      Thigh:
+        description: hindlimb stylopod (thigh)
+        meaning: UBERON:0000376
+      Knee:
+        description: knee
+        meaning: UBERON:0001465
+      Shank:
+        description: hindlimb zeugopod (shank)
+        meaning: UBERON:0003823
+      Ankle:
+        description: tarsal region (ankle)
+        meaning: UBERON:0004454
+      Foot:
+        description: pes (hindpaw)
+        meaning: UBERON:0002387
+      Digit:
+        description: digit
+        meaning: UBERON:0002544
+      Forelimb:
+        description: forelimb
+        meaning: UBERON:0002102
+      Hindlimb:
+        description: hindlimb
+        meaning: UBERON:0002103
+      Spinal nerve:
+        description: spinal nerve
+        meaning: UBERON:0001780
+      Cranial nerve:
+        description: cranial nerve
+        meaning: UBERON:0001785
+      Retina:
+        description: retina
+        meaning: UBERON:0000966
+      Cochlea:
+        description: cochlea
+        meaning: UBERON:0001844
+      Olfactory bulb:
+        description: olfactory bulb
+        meaning: UBERON:0002264
+      Vibrissa:
+        description: strand of vibrissa hair
+        meaning: UBERON:0006378
+      Trapezius muscle:
+        description: trapezius muscle
+        meaning: UBERON:0002380
+      Gastrocnemius:
+        description: gastrocnemius muscle
+        meaning: UBERON:0001388
+      Biceps brachii:
+        description: biceps brachii muscle
+        meaning: UBERON:0001507
+      Quadriceps femoris:
+        description: quadriceps femoris muscle
+        meaning: UBERON:0001377
+      Masseter muscle:
+        description: masseter muscle
+        meaning: UBERON:0001597
+      Sternocleidomastoid:
+        description: sternocleidomastoid muscle
+        meaning: UBERON:0001128
+      Skeletal muscle:
+        description: skeletal muscle tissue (generic)
+        meaning: UBERON:0001134
+      Heart:
+        description: heart
+        meaning: UBERON:0000948
+      Liver:
+        description: liver
+        meaning: UBERON:0002107
+      Lung:
+        description: lung
+        meaning: UBERON:0002048
+      Stomach:
+        description: stomach
+        meaning: UBERON:0000945
+      Kidney:
+        description: kidney
+        meaning: UBERON:0002113
+      Spleen:
+        description: spleen
+        meaning: UBERON:0002106
+      Ovary:
+        description: ovary
+        meaning: UBERON:0000992
+      Testis:
+        description: testis
+        meaning: UBERON:0000473
