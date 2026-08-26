@@ -1,5 +1,5 @@
 """
-nwb_termsets
+neuro_termsets
 """
 import os
 

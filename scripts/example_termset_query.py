@@ -2,16 +2,16 @@ import os
 from pynwb import get_loaded_type_config
 from pynwb.file import Subject
 from hdmf.term_set import TermSet
-import nwb_termsets
+import neuro_termsets
 
 def main():
     # Load the termset configuration into PyNWB
     # This associates TermSets with specific PyNWB classes and fields 
     # (e.g., Subject.species, ElectrodeGroup.location)
-    nwb_termsets.load_termset_config()
+    neuro_termsets.load_termset_config()
 
     # 1. Get the configured TermSet for Subject.species
-    species_termset = nwb_termsets.get_configured_termsets(Subject, 'species')
+    species_termset = neuro_termsets.get_configured_termsets(Subject, 'species')
     
     # 2. Look up and print the valid terms
     # The `view_set` property is a dictionary mapping term names (keys) to Term_Info objects

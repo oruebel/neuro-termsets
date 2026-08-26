@@ -4,11 +4,11 @@ from pynwb import NWBFile, NWBHDF5IO
 from pynwb.file import Subject
 from pynwb.ecephys import ElectrodeGroup
 from pynwb.device import Device
-import nwb_termsets
+import neuro_termsets
 
 # Load the termset configuration into PyNWB
 # This will update the Subject and ElectrodeGroup classes to use the termsets for validation
-nwb_termsets.load_termset_config()
+neuro_termsets.load_termset_config()
 
 # Create an NWBFile
 nwbfile = NWBFile(

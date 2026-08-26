@@ -17,12 +17,12 @@ pip install -e .
 See `scripts/example_usage.py` for a complete example of how to use the termsets and generate a HERD table.
 
 ```python
-import nwb_termsets
+import neuro_termsets
 from pynwb import NWBFile
 from pynwb.file import Subject
 
 # Load the termset configuration into PyNWB
-nwb_termsets.load_termset_config()
+neuro_termsets.load_termset_config()
 
 # Now when you create a Subject, the species will be validated against the NCBITaxon termset
 subject = Subject(
@@ -112,11 +112,11 @@ You can use the generated lab-specific term sets in two ways:
 The generator creates a `lab_config.yaml` file that maps the term sets to the appropriate PyNWB fields. You can load this alongside the default configuration:
 
 ```python
-import nwb_termsets
+import neuro_termsets
 from pynwb import load_type_config
 
 # Load default configuration
-nwb_termsets.load_termset_config()
+neuro_termsets.load_termset_config()
 
 # Load lab-specific configuration
 load_type_config('lab_termsets/my_lab_termsets/lab_config.yaml')
@@ -159,12 +159,12 @@ Alternatively, you can manually wrap specific fields with a `TermSetWrapper` in 
 
 ```python
 from hdmf.term_set import TermSetWrapper
-import nwb_termsets
+import neuro_termsets
 
 # Use the Mouse Brain Atlas for a specific electrode group
 electrode_group.location = TermSetWrapper(
     value="primary motor cortex",
-    termset=nwb_termsets.get_termset_path("brain_region_mba_termset.yaml")
+    termset=neuro_termsets.get_termset_path("brain_region_mba_termset.yaml")
 )
 ```
 

@@ -1,4 +1,4 @@
-id: https://github.com/nwb-extensions/nwb_termsets/term_sets/strains
+id: https://github.com/nwb-extensions/neuro_termsets/term_sets/strains
 name: Strains
 version: 0.0.1
 prefixes:

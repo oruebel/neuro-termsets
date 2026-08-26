@@ -1,6 +1,6 @@
 # Scripts
 
-This directory contains various Python scripts for generating term sets and demonstrating usage of the `nwb-termsets` package.
+This directory contains various Python scripts for generating term sets and demonstrating usage of the `neuro-termsets` package.
 
 ## Available Scripts
 
@@ -34,7 +34,7 @@ This script generates lab-specific term sets based on a template. It allows labs
 
 ### 3. `example_usage.py`
 
-This script demonstrates how to use the `nwb-termsets` package to create an NWB file with term sets applied. It shows how to load the default configuration, create NWB objects (like `Subject` and `NWBFile`), and write the file to disk.
+This script demonstrates how to use the `neuro-termsets` package to create an NWB file with term sets applied. It shows how to load the default configuration, create NWB objects (like `Subject` and `NWBFile`), and write the file to disk.
 
 **Generated files:**
 - `example_termsets.nwb` (in the root directory, ignored by git)

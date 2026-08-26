@@ -30,7 +30,7 @@ logger = logging.getLogger(__name__)
 
 
 ROOT = Path(__file__).resolve().parent.parent
-TERMSET_DIR = ROOT / 'src' / 'nwb_termsets' / 'term_sets'
+TERMSET_DIR = ROOT / 'src' / 'neuro_termsets' / 'term_sets'
 
 
 def fetch_json(url: str) -> dict:

@@ -1,4 +1,4 @@
-id: https://github.com/nwb-extensions/nwb_termsets/term_sets/general_anatomy
+id: https://github.com/nwb-extensions/neuro_termsets/term_sets/general_anatomy
 name: GeneralAnatomy
 version: 0.0.1
 prefixes:
